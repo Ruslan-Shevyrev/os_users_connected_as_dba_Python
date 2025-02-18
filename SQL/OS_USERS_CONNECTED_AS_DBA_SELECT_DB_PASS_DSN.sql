@@ -1,0 +1,3 @@
+SELECT DBSYSPWD, dbadmindata.pkg_tns.getcstrbyalias(tnsalias) AS DSN
+	FROM APP_OS_USERS_CONNECTED_AS_DBA.V_OS_USERS_CONNECTED_AS_DBA_DB_LIST
+	WHERE DBID = dbid
